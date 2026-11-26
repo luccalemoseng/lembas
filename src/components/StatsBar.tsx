@@ -16,8 +16,11 @@ export function StatsBar() {
   const pct = Math.min(1, xp / goal)
 
   return (
-    <header className="flex items-center justify-between gap-3 py-2">
-      <h1 className="font-display text-2xl font-bold text-forest-800">{t('app.name')}</h1>
+    <header className="flex items-center justify-between gap-3 py-3">
+      <h1 className="flex items-center gap-1.5 font-display text-[1.75rem] font-bold leading-none tracking-wide text-forest-800">
+        <Icon name="leaf" className="h-5 w-5 text-gold-500" />
+        {t('app.name')}
+      </h1>
       <div className="flex items-center gap-3 text-sm font-bold">
         <span
           role="img"
@@ -47,6 +50,7 @@ export function StatsBar() {
               r="15"
               fill="none"
               stroke="var(--color-stone-300)"
+              strokeOpacity="0.7"
               strokeWidth="5"
             />
             <circle

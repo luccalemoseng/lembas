@@ -20,12 +20,12 @@ export function PracticePage() {
 
   return (
     <>
-      <h1 className="py-4 font-display text-2xl font-bold text-forest-800">
+      <h1 className="py-4 font-display text-3xl font-bold text-forest-800">
         {t('practice.title')}
       </h1>
 
-      <section className="rounded-2xl border-2 border-stone-200 bg-white p-4">
-        <h2 className="flex items-center gap-2 font-bold text-forest-800">
+      <section className="rounded-2xl border border-stone-300/80 shadow-soft bg-vellum p-4">
+        <h2 className="flex items-center gap-2 font-display text-xl font-bold text-forest-800">
           <Icon name="heart" className="h-6 w-6 text-bad-700" />
           {t('hearts.count', { count: hearts, max: MAX_HEARTS })}
         </h2>
@@ -34,8 +34,8 @@ export function PracticePage() {
         </p>
       </section>
 
-      <section className="mt-6 rounded-2xl border-2 border-stone-200 bg-white p-4">
-        <h2 className="flex items-center gap-2 font-bold text-forest-800">
+      <section className="mt-6 rounded-2xl border border-stone-300/80 shadow-soft bg-vellum p-4">
+        <h2 className="flex items-center gap-2 font-display text-xl font-bold text-forest-800">
           <Icon name="refresh" className="h-6 w-6" />
           {due.length === 1 ? t('practice.dueOne') : t('practice.due', { count: due.length })}
         </h2>

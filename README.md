@@ -182,6 +182,10 @@ Android. Visual feedback works everywhere.
 ## Licences
 
 - Code: add the licence of your choice (e.g. MIT) in `LICENSE`.
-- App icon: original artwork in `public/favicon.svg`.
+- App icon, leaf ornament, map-contour texture and trail: original artwork drawn for this app.
+- Fonts (self-hosted, Latin subsets only, see `src/fonts.css`):
+  [Inter](https://rsms.me/inter/) and
+  [Cormorant Garamond](https://github.com/CatharsisFonts/Cormorant), both under the SIL Open
+  Font Licence 1.1, via Fontsource.
 - Tengwar font (Phase 3): will be documented here once chosen; only fonts with a free
   licence (e.g. SIL OFL) will be bundled.

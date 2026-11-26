@@ -1,22 +1,37 @@
 @import 'tailwindcss';
+@import './fonts.css';
 
 @theme {
-  --color-forest-50: #eef6f1;
-  --color-forest-100: #d5eadd;
-  --color-forest-600: #2c6a50;
-  --color-forest-700: #1f4d3a;
-  --color-forest-800: #173a2c;
-  --color-forest-900: #0f261d;
-  --color-gold-300: #f0d98c;
-  --color-gold-400: #e8c766;
-  --color-gold-600: #7a5c0a;
-  --color-parchment: #f7f2e7;
-  --color-ink: #1d1b16;
-  --color-ok-100: #dcf3e3;
+  /* Evergreen: deep forest greens */
+  --color-forest-50: #eef5f0;
+  --color-forest-100: #d3e6da;
+  --color-forest-200: #a9ccb6;
+  --color-forest-600: #2a6449;
+  --color-forest-700: #1d4a36;
+  --color-forest-800: #153829;
+  --color-forest-900: #0c241a;
+  --color-forest-950: #07170f;
+  /* Gold leaf */
+  --color-gold-200: #f6e7b8;
+  --color-gold-300: #ecd48a;
+  --color-gold-400: #d9b65a;
+  --color-gold-500: #b8923a;
+  --color-gold-600: #75570f;
+  /* Mithril: cool silver */
+  --color-mithril-100: #eef0f1;
+  --color-mithril-300: #c9ced2;
+  --color-mithril-500: #8d959c;
+  /* Paper */
+  --color-parchment: #f5eedf;
+  --color-vellum: #fbf7ee;
+  --color-ink: #1c1a15;
+  --color-ok-100: #dcf1e2;
   --color-ok-700: #1d6b3a;
-  --color-bad-100: #fbe1df;
+  --color-bad-100: #fae0dc;
   --color-bad-700: #a3261b;
-  --font-display: Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Cormorant Garamond Variable', Georgia, 'Times New Roman', serif;
+  --shadow-soft: 0 1px 2px rgb(28 26 21 / 0.06), 0 6px 20px -6px rgb(28 26 21 / 0.18);
 }
 
 html {
@@ -25,14 +40,45 @@ html {
 }
 
 body {
-  @apply bg-parchment text-ink antialiased;
-  font-family:
-    system-ui,
-    -apple-system,
-    'Segoe UI',
-    Roboto,
-    sans-serif;
+  @apply bg-parchment font-sans text-ink antialiased;
   padding-bottom: env(safe-area-inset-bottom);
+  /* Soft vignette plus a faint paper grain. */
+  background-image:
+    radial-gradient(ellipse at 50% -10%, rgb(255 255 255 / 0.7), transparent 60%),
+    radial-gradient(ellipse at 50% 120%, rgb(117 87 15 / 0.08), transparent 55%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .27 0 0 0 0 .12 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+}
+
+/* Old-style figures read as letters in Cormorant (1 looks like I). */
+.font-display,
+[lang='sjn'],
+[lang='qya'] {
+  font-variant-numeric: lining-nums;
+}
+
+/* Elvish text: a calligraphic serif, slightly larger to match the x-height. */
+[lang='sjn'],
+[lang='qya'] {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.14em;
+  letter-spacing: 0.01em;
+}
+
+/* Contour lines, like the relief on an old map. */
+.bg-contours {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='160' fill='none' stroke='%23ecd48a' stroke-opacity='.13' stroke-width='1'%3E%3Cpath d='M-10 120c40-30 70-10 110-30s60-60 110-50 60 30 40 50'/%3E%3Cpath d='M-10 135c45-28 80-6 120-26s55-55 100-46 70 34 40 60'/%3E%3Cpath d='M-10 150c50-25 90-4 130-22s50-50 90-42 80 38 40 70'/%3E%3Cpath d='M150 40c10-18 40-22 52-6s-4 32-24 30-34-8-28-24z'/%3E%3Cpath d='M138 42c12-30 64-34 76-6s-12 46-42 42-46-14-34-36z'/%3E%3Cpath d='M20 30c20-14 50-8 52 8s-26 24-44 18-22-16-8-26z'/%3E%3C/svg%3E"),
+    linear-gradient(160deg, var(--color-forest-700), var(--color-forest-900));
+}
+
+/* Hide scrollbars on horizontal chip rows; they still scroll by touch and wheel. */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 :focus-visible {
@@ -71,6 +117,22 @@ body {
     transform: translateY(0);
   }
 }
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow:
+      0 6px 0 var(--color-forest-950),
+      0 0 0 6px rgb(217 182 90 / 0.35);
+  }
+  50% {
+    box-shadow:
+      0 6px 0 var(--color-forest-950),
+      0 0 0 12px rgb(217 182 90 / 0);
+  }
+}
+.animate-glow {
+  animation: glow 2.4s ease-in-out infinite;
+}
 .animate-pop {
   animation: pop 300ms ease-out;
 }
@@ -85,6 +147,7 @@ body {
   .animate-pop,
   .animate-shake,
   .animate-slide-up,
+  .animate-glow,
   .animate-pulse {
     animation: none;
   }

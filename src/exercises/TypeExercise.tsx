@@ -20,12 +20,12 @@ export function TypeExercise(props: {
 
   return (
     <div>
-      <h2 className="mb-4 text-xl font-bold text-forest-800">
+      <h2 className="mb-4 font-display text-2xl font-bold text-forest-800">
         <label htmlFor={inputId}>
           {exercise.answerLanguage === 'en' ? t('exercise.typeEn') : t('exercise.typeElvish')}
         </label>
       </h2>
-      <p className="mb-6 rounded-2xl border-2 border-stone-200 bg-white p-4 text-center font-display text-2xl">
+      <p className="mb-6 rounded-2xl border border-stone-300/80 shadow-soft bg-vellum p-4 text-center font-display text-2xl">
         <LangText lang={exercise.promptLang}>{exercise.prompt}</LangText>
       </p>
       <form
@@ -46,7 +46,7 @@ export function TypeExercise(props: {
           autoCapitalize="none"
           spellCheck={false}
           lang={exercise.answerLanguage === 'en' ? 'en' : undefined}
-          className="min-h-14 w-full rounded-2xl border-2 border-stone-300 bg-white px-4 text-lg focus:border-forest-600 focus:outline-none"
+          className="min-h-14 w-full rounded-2xl border-2 border-stone-300 bg-vellum px-4 text-lg focus:border-forest-600 focus:outline-none"
         />
         {exercise.answerLanguage === 'elvish' && (
           <p className="mt-2 text-sm text-stone-700">{t('exercise.accentHint')}</p>

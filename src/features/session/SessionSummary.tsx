@@ -72,7 +72,7 @@ export function SessionSummary({
       )}
       {reward.achievements.length > 0 && (
         <section aria-labelledby="new-achievements" className="w-full">
-          <h2 id="new-achievements" className="mb-2 font-bold text-forest-800">
+          <h2 id="new-achievements" className="mb-2 font-display text-xl font-bold text-forest-800">
             {t('achievements.unlocked')}
           </h2>
           <ul className="space-y-2">
@@ -82,7 +82,7 @@ export function SessionSummary({
               return (
                 <li
                   key={id}
-                  className="animate-pop flex items-center gap-3 rounded-2xl border-2 border-gold-400 bg-white p-3 text-left"
+                  className="animate-pop flex items-center gap-3 rounded-2xl border-2 border-gold-400 bg-vellum p-3 text-left"
                 >
                   <Icon name="trophy" className="h-8 w-8 shrink-0 text-gold-600" />
                   <span>
@@ -104,7 +104,7 @@ export function SessionSummary({
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-2xl border-2 border-gold-400 bg-white p-3">
+    <div className="rounded-2xl border-2 border-gold-400 bg-vellum p-3">
       <dt className="text-xs font-bold uppercase tracking-wide text-stone-700">{label}</dt>
       <dd className="mt-1 text-lg font-bold text-forest-800">{value}</dd>
     </div>

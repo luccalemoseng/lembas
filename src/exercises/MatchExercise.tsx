@@ -66,7 +66,9 @@ export function MatchExercise(props: {
 
   return (
     <div>
-      <h2 className="mb-6 text-xl font-bold text-forest-800">{t('exercise.match')}</h2>
+      <h2 className="mb-6 font-display text-2xl font-bold text-forest-800">
+        {t('exercise.match')}
+      </h2>
       <div className="grid grid-cols-2 gap-3">
         {columns.map((col) => (
           <ul key={col.side} className="grid gap-3">
@@ -76,7 +78,7 @@ export function MatchExercise(props: {
               const isMatched = matched.has(pairIndex)
               const isSelected = selected?.side === col.side && selected.index === pairIndex
               const isWrong = wrong?.[col.side] === pairIndex
-              let tone = 'border-stone-300 bg-white'
+              let tone = 'border-stone-300 bg-vellum'
               if (isMatched) tone = 'border-stone-200 bg-stone-100 text-stone-500'
               else if (isWrong) tone = 'border-bad-700 bg-bad-100 animate-shake'
               else if (isSelected) tone = 'border-forest-600 bg-forest-50'

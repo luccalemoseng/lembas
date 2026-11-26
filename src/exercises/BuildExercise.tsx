@@ -21,7 +21,7 @@ export function BuildExercise(props: {
       type="button"
       disabled={revealed}
       onClick={() => onChange(placed ? selected.filter((i) => i !== index) : [...selected, index])}
-      className="min-h-11 rounded-xl border-2 border-stone-300 bg-white px-3 py-2 text-lg font-semibold shadow-[0_3px_0_var(--color-stone-300)] active:translate-y-0.5 active:shadow-none"
+      className="min-h-11 rounded-xl border-2 border-stone-300 bg-vellum px-3 py-2 text-lg font-semibold shadow-[0_3px_0_var(--color-stone-300)] active:translate-y-0.5 active:shadow-none"
     >
       <LangText lang={exercise.answerLang}>{exercise.tiles[index]}</LangText>
     </button>
@@ -29,10 +29,10 @@ export function BuildExercise(props: {
 
   return (
     <div>
-      <h2 className="mb-4 text-xl font-bold text-forest-800">
+      <h2 className="mb-4 font-display text-2xl font-bold text-forest-800">
         {exercise.answerLang === 'en' ? t('exercise.buildEn') : t('exercise.buildElvish')}
       </h2>
-      <p className="mb-6 rounded-2xl border-2 border-stone-200 bg-white p-4 text-center font-display text-2xl">
+      <p className="mb-6 rounded-2xl border border-stone-300/80 shadow-soft bg-vellum p-4 text-center font-display text-2xl">
         <LangText lang={exercise.promptLang}>{exercise.prompt}</LangText>
       </p>
 

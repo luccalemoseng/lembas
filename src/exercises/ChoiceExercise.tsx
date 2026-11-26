@@ -21,8 +21,10 @@ export function ChoiceExercise(props: {
 
   return (
     <div>
-      <h2 className="mb-4 text-xl font-bold text-forest-800">{t(QUESTION[exercise.variant])}</h2>
-      <p className="mb-6 rounded-2xl border-2 border-stone-200 bg-white p-4 text-center font-display text-2xl">
+      <h2 className="mb-4 font-display text-2xl font-bold text-forest-800">
+        {t(QUESTION[exercise.variant])}
+      </h2>
+      <p className="mb-6 rounded-2xl border border-stone-300/80 shadow-soft bg-vellum p-4 text-center font-display text-2xl">
         <LangText lang={exercise.promptLang}>{exercise.prompt}</LangText>
       </p>
       <div
@@ -33,7 +35,7 @@ export function ChoiceExercise(props: {
         {exercise.options.map((option, i) => {
           const isSelected = selected === option
           const isAnswer = option === exercise.answer
-          let tone = 'border-stone-300 bg-white'
+          let tone = 'border-stone-300 bg-vellum'
           if (revealed && isAnswer) tone = 'border-ok-700 bg-ok-100'
           else if (revealed && isSelected) tone = 'border-bad-700 bg-bad-100 animate-shake'
           else if (isSelected) tone = 'border-forest-600 bg-forest-50'

@@ -24,11 +24,11 @@ type Variant = 'primary' | 'secondary' | 'ghost' | 'danger'
 
 const VARIANTS: Record<Variant, string> = {
   primary:
-    'bg-forest-700 text-white shadow-[0_4px_0_var(--color-forest-900)] active:translate-y-[2px] active:shadow-[0_2px_0_var(--color-forest-900)] disabled:bg-stone-300 disabled:text-stone-600 disabled:shadow-none',
+    'bg-linear-to-b from-forest-600 to-forest-700 text-gold-200 ring-1 ring-inset ring-gold-300/25 shadow-[0_4px_0_var(--color-forest-950)] active:translate-y-[2px] active:shadow-[0_2px_0_var(--color-forest-950)] disabled:bg-none disabled:bg-stone-300 disabled:text-stone-600 disabled:ring-0 disabled:shadow-none',
   secondary:
-    'bg-white text-forest-800 border-2 border-stone-300 shadow-[0_3px_0_var(--color-stone-300)] active:translate-y-[2px] active:shadow-none',
+    'bg-vellum text-forest-800 border border-stone-300 shadow-[0_3px_0_var(--color-stone-300)] active:translate-y-[2px] active:shadow-none',
   ghost: 'bg-transparent text-forest-700 underline-offset-4 hover:underline',
-  danger: 'bg-white text-bad-700 border-2 border-bad-700',
+  danger: 'bg-vellum text-bad-700 border-2 border-bad-700',
 }
 
 export function Button({
@@ -40,7 +40,7 @@ export function Button({
     <button
       type="button"
       {...props}
-      className={`min-h-12 rounded-2xl px-5 py-3 font-bold tracking-wide transition-transform disabled:cursor-not-allowed ${VARIANTS[variant]} ${className}`}
+      className={`min-h-12 rounded-xl px-5 py-3 font-semibold tracking-wide transition-transform disabled:cursor-not-allowed ${VARIANTS[variant]} ${className}`}
     />
   )
 }
@@ -82,12 +82,42 @@ export function ProgressBar({ value, label }: { value: number; label: string }) 
       aria-valuemin={0}
       aria-valuemax={100}
       aria-valuenow={pct}
-      className="h-4 w-full overflow-hidden rounded-full bg-stone-300"
+      className="h-3 w-full overflow-hidden rounded-full bg-stone-300/70 ring-1 ring-inset ring-stone-400/30"
     >
       <div
-        className="h-full rounded-full bg-gold-400 transition-[width] duration-300"
+        className="h-full rounded-full bg-linear-to-r from-gold-500 to-gold-300 transition-[width] duration-300"
         style={{ width: `${pct}%` }}
       />
     </div>
+  )
+}
+
+/**
+ * A small leaf-and-vine divider, drawn for this app. `tone` picks gold on
+ * dark backgrounds or a muted bronze on parchment.
+ */
+export function Ornament({
+  className = '',
+  tone = 'bronze',
+}: {
+  className?: string
+  tone?: 'gold' | 'bronze'
+}) {
+  return (
+    <svg
+      viewBox="0 0 160 16"
+      aria-hidden="true"
+      className={`h-4 w-40 ${tone === 'gold' ? 'text-gold-300' : 'text-gold-500'} ${className}`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.2"
+      strokeLinecap="round"
+    >
+      <path d="M4 8h52M104 8h52" />
+      <path d="M56 8c6-6 12-6 16-2M104 8c-6 6-12 6-16 2" />
+      <path d="M80 2c5 3 5 9 0 12-5-3-5-9 0-12z" fill="currentColor" />
+      <circle cx="66" cy="8" r="1.4" fill="currentColor" />
+      <circle cx="94" cy="8" r="1.4" fill="currentColor" />
+    </svg>
   )
 }

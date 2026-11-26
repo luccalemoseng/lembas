@@ -24,7 +24,7 @@ function BottomNav() {
   return (
     <nav
       aria-label={t('nav.main')}
-      className="fixed inset-x-0 bottom-0 z-10 border-t-2 border-stone-200 bg-parchment/95 backdrop-blur"
+      className="fixed inset-x-0 bottom-0 z-10 border-t border-gold-500/25 bg-vellum/80 shadow-[0_-8px_24px_-12px_rgb(28_26_21/0.25)] backdrop-blur-md"
       style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
     >
       <ul className="mx-auto flex max-w-lg">
@@ -34,8 +34,10 @@ function BottomNav() {
               to={item.to}
               end
               className={({ isActive }) =>
-                `flex min-h-14 flex-col items-center justify-center gap-0.5 text-xs font-bold ${
-                  isActive ? 'text-forest-700' : 'text-stone-600'
+                `relative flex min-h-14 flex-col items-center justify-center gap-0.5 text-xs font-semibold tracking-wide ${
+                  isActive
+                    ? 'text-forest-700 before:absolute before:top-0 before:h-0.5 before:w-10 before:rounded-full before:bg-gold-500'
+                    : 'text-stone-600'
                 }`
               }
             >

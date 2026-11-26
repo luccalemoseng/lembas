@@ -15,7 +15,7 @@ export function ProfilePage() {
 
   return (
     <>
-      <h1 className="py-4 font-display text-2xl font-bold text-forest-800">{t('profile.title')}</h1>
+      <h1 className="py-4 font-display text-3xl font-bold text-forest-800">{t('profile.title')}</h1>
 
       <dl className="grid grid-cols-2 gap-3">
         <Stat icon="flame" label={t('stats.streakShort')} value={streak} />
@@ -24,16 +24,16 @@ export function ProfilePage() {
         <Stat icon="check" label={t('stats.lessonsDone')} value={lessonsDone} />
       </dl>
 
-      <section className="mt-6 rounded-2xl border-2 border-stone-200 bg-white p-4">
-        <h2 className="flex items-center gap-2 font-bold text-forest-800">
+      <section className="mt-6 rounded-2xl border border-stone-300/80 shadow-soft bg-vellum p-4">
+        <h2 className="flex items-center gap-2 font-display text-xl font-bold text-forest-800">
           <Icon name="snow" className="h-5 w-5 text-sky-700" />
           {t('stats.freezes')}: {state.streak.freezes} / {MAX_FREEZES}
         </h2>
         <p className="mt-1 text-sm text-stone-700">{t('profile.freezesHelp')}</p>
       </section>
 
-      <section className="mt-6 rounded-2xl border-2 border-stone-200 bg-white p-4">
-        <h2 id="goal-label" className="font-bold text-forest-800">
+      <section className="mt-6 rounded-2xl border border-stone-300/80 shadow-soft bg-vellum p-4">
+        <h2 id="goal-label" className="font-display text-xl font-bold text-forest-800">
           {t('profile.dailyGoal')}
         </h2>
         <p className="mt-1 text-sm text-stone-700">{t('profile.dailyGoalHelp')}</p>
@@ -48,7 +48,7 @@ export function ProfilePage() {
               className={`min-h-12 rounded-xl border-2 text-sm font-bold ${
                 state.dailyGoal === xp
                   ? 'border-forest-700 bg-forest-700 text-white'
-                  : 'border-stone-300 bg-white text-forest-800'
+                  : 'border-stone-300 bg-vellum text-forest-800'
               }`}
             >
               {t('profile.goalOption', { xp })}
@@ -58,7 +58,7 @@ export function ProfilePage() {
       </section>
 
       <section className="mt-6" aria-labelledby="achievements-title">
-        <h2 id="achievements-title" className="mb-3 font-bold text-forest-800">
+        <h2 id="achievements-title" className="mb-3 font-display text-xl font-bold text-forest-800">
           {t('achievements.title')}
         </h2>
         <ul className="grid gap-2">
@@ -77,7 +77,7 @@ export function ProfilePage() {
               <li
                 key={a.id}
                 className={`flex items-center gap-3 rounded-2xl border-2 p-3 ${
-                  earned ? 'border-gold-400 bg-white' : 'border-stone-200 bg-stone-100'
+                  earned ? 'border-gold-400 bg-vellum' : 'border-stone-200 bg-stone-100'
                 }`}
               >
                 <Icon
@@ -123,12 +123,12 @@ function Stat({
   value: number
 }) {
   return (
-    <div className="rounded-2xl border-2 border-stone-200 bg-white p-3">
+    <div className="rounded-2xl border border-stone-300/80 shadow-soft bg-vellum p-3">
       <dt className="flex items-center gap-1 text-xs font-bold uppercase tracking-wide text-stone-700">
         <Icon name={icon} className="h-4 w-4" />
         {label}
       </dt>
-      <dd className="mt-1 text-2xl font-bold text-forest-800">{value}</dd>
+      <dd className="mt-1 font-display text-3xl font-bold text-forest-800">{value}</dd>
     </div>
   )
 }
