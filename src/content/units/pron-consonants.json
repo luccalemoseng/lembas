@@ -1,0 +1,28 @@
+{
+  "id": "pron-consonants",
+  "trackId": "pronunciation",
+  "title": "Consonants",
+  "description": "Letters that do not sound like English.",
+  "lessons": [
+    {
+      "id": "pron-consonants-1",
+      "title": "Always hard",
+      "items": ["pr-cons-c", "pr-cons-g", "pr-cons-s"]
+    },
+    {
+      "id": "pron-consonants-2",
+      "title": "TH, DH and CH",
+      "items": ["pr-cons-th", "pr-cons-dh", "pr-cons-ch"]
+    },
+    {
+      "id": "pron-consonants-3",
+      "title": "R, LH and final F",
+      "items": ["pr-cons-r", "pr-cons-lh-rh", "pr-cons-final-f"]
+    },
+    {
+      "id": "pron-consonants-4",
+      "title": "Double letters",
+      "items": ["pr-cons-double", "pr-cons-c", "pr-cons-dh", "pr-cons-ch"]
+    }
+  ]
+}

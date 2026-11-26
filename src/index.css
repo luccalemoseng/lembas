@@ -1,0 +1,91 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-forest-50: #eef6f1;
+  --color-forest-100: #d5eadd;
+  --color-forest-600: #2c6a50;
+  --color-forest-700: #1f4d3a;
+  --color-forest-800: #173a2c;
+  --color-forest-900: #0f261d;
+  --color-gold-300: #f0d98c;
+  --color-gold-400: #e8c766;
+  --color-gold-600: #7a5c0a;
+  --color-parchment: #f7f2e7;
+  --color-ink: #1d1b16;
+  --color-ok-100: #dcf3e3;
+  --color-ok-700: #1d6b3a;
+  --color-bad-100: #fbe1df;
+  --color-bad-700: #a3261b;
+  --font-display: Georgia, 'Times New Roman', serif;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  text-size-adjust: 100%;
+}
+
+body {
+  @apply bg-parchment text-ink antialiased;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-gold-600);
+  outline-offset: 2px;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.96);
+  }
+  60% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-6px);
+  }
+  75% {
+    transform: translateX(6px);
+  }
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.animate-pop {
+  animation: pop 300ms ease-out;
+}
+.animate-shake {
+  animation: shake 300ms ease-in-out;
+}
+.animate-slide-up {
+  animation: slide-up 200ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-pop,
+  .animate-shake,
+  .animate-slide-up,
+  .animate-pulse {
+    animation: none;
+  }
+}

@@ -1,0 +1,522 @@
+[
+  {
+    "id": "pr-vowel-a",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "a",
+    "sound": "a as in 'father'",
+    "questions": [
+      {
+        "prompt": "How is the a in 'Anor' pronounced?",
+        "answer": "like the a in 'father'",
+        "distractors": ["like the a in 'late'", "like the a in 'cat'"]
+      }
+    ],
+    "explanation": "Elvish vowels have the 'pure' values they have in Italian or Spanish. A is an open 'ah', never the 'ay' of English 'late'.",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-vowel-e",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "e",
+    "sound": "e as in 'bed'",
+    "questions": [
+      {
+        "prompt": "How is the first e in 'Elendil' pronounced?",
+        "answer": "like the e in 'bed'",
+        "distractors": ["like the ee in 'see'", "it is silent"]
+      }
+    ],
+    "explanation": "E is a pure 'eh' sound, never the 'ee' of English 'see'.",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-vowel-i",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "i",
+    "sound": "i as in 'machine'",
+    "questions": [
+      {
+        "prompt": "How is the i in 'Ithil' pronounced?",
+        "answer": "like the i in 'machine', but short",
+        "distractors": ["like the i in 'fine'", "like the i in 'bird'"]
+      }
+    ],
+    "explanation": "I is always an 'ee'-type sound, short or long, never the 'eye' of English 'fine'.",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-vowel-o",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "o",
+    "sound": "pure o, as in Spanish 'no'",
+    "questions": [
+      {
+        "prompt": "How is the o in 'Mordor' pronounced?",
+        "answer": "a pure 'o', as in Spanish 'no'",
+        "distractors": ["like the o in 'go', gliding into a 'w'", "like the u in 'cup'"]
+      }
+    ],
+    "explanation": "O is a pure 'o' with no glide at the end, unlike English 'go' (which ends in a 'w' sound).",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-vowel-u",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "u",
+    "sound": "u as in 'rude'",
+    "questions": [
+      {
+        "prompt": "How is the u in 'Isildur' pronounced?",
+        "answer": "like the u in 'rude', but short",
+        "distractors": ["like the u in 'cut'", "like the u in 'cute'"]
+      }
+    ],
+    "explanation": "U is always an 'oo'-type sound, never the 'uh' of 'cut' or the 'you' of 'cute'.",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-acute",
+    "kind": "rule",
+    "lang": "both",
+    "questions": [
+      {
+        "prompt": "What does the accent mark in 'Andúril' tell you?",
+        "answer": "the vowel is long",
+        "distractors": ["the vowel is silent", "the vowel is said with a higher pitch"]
+      },
+      {
+        "prompt": "Which vowel is long in 'Lothlórien'?",
+        "answer": "the ó",
+        "distractors": ["the first o", "the final e"]
+      }
+    ],
+    "explanation": "An acute accent (á, é, í, ó, ú) marks a long vowel: the same sound, held for longer.",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-circumflex",
+    "kind": "rule",
+    "lang": "sindarin",
+    "questions": [
+      {
+        "prompt": "In Sindarin, what does the circumflex on the û of 'Lhûn' show?",
+        "answer": "an extra-long vowel in a one-syllable word",
+        "distractors": ["a nasal vowel", "a vowel pronounced like 'ow'"]
+      }
+    ],
+    "explanation": "In Sindarin, a long vowel in a stressed word of one syllable gets a circumflex (â, ê, î, ô, û) instead of an acute accent. It signals a vowel held even longer than usual.",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-final-e",
+    "kind": "rule",
+    "lang": "both",
+    "questions": [
+      {
+        "prompt": "Is the final e of 'Namárië' pronounced?",
+        "answer": "yes, a final e is always pronounced",
+        "distractors": ["no, it is silent as in English 'make'", "only when the word is sung"]
+      }
+    ],
+    "explanation": "Elvish has no silent letters at the end of words. A final e is a full vowel and makes its own syllable.",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-diaeresis",
+    "kind": "rule",
+    "lang": "both",
+    "questions": [
+      {
+        "prompt": "What do the two dots in 'Eärendil' tell you?",
+        "answer": "e and a are said separately, in two syllables",
+        "distractors": ["the a is long", "the a is silent"]
+      }
+    ],
+    "explanation": "The two dots (diaeresis) are only a reading aid: they show that the vowel is pronounced on its own, not merged with its neighbour and not silent.",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-diph-ai",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "ai",
+    "sound": "like 'eye'",
+    "questions": [
+      {
+        "prompt": "How is the ai in 'Dúnedain' pronounced?",
+        "answer": "like the word 'eye'",
+        "distractors": ["like the ai in 'rain'", "as two syllables, a-i"]
+      }
+    ],
+    "explanation": "AI is a single gliding sound, like English 'eye' or the 'igh' in 'high'.",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-diph-au",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "au",
+    "sound": "like 'ow' in 'cow'",
+    "questions": [
+      {
+        "prompt": "How is the au in 'Rauros' pronounced?",
+        "answer": "like the ow in 'cow'",
+        "distractors": ["like the au in 'caught'", "like the o in 'go'"]
+      }
+    ],
+    "explanation": "AU glides from 'a' to 'u', like the 'ow' of 'cow' or the 'ou' of 'house'.",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-diph-ui",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "ui",
+    "sound": "'oo' gliding into 'ee'",
+    "questions": [
+      {
+        "prompt": "How is the ui in 'Anduin' pronounced?",
+        "answer": "'oo' gliding into 'ee', in one syllable",
+        "distractors": ["like the ui in 'fruit'", "like the word 'we'"]
+      }
+    ],
+    "explanation": "UI is one syllable: start on 'oo' and slide quickly to 'ee', without a break between them.",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-diph-ae",
+    "kind": "sound",
+    "lang": "sindarin",
+    "grapheme": "ae",
+    "sound": "'a' gliding into 'e'",
+    "questions": [
+      {
+        "prompt": "How is the ae in 'Gilraen' pronounced?",
+        "answer": "'a' gliding into 'e', in one syllable",
+        "distractors": ["like the ay in 'day'", "like the ee in 'see'"]
+      }
+    ],
+    "explanation": "In Sindarin, AE is the vowels a and e run together into one syllable.",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-vowel-y",
+    "kind": "sound",
+    "lang": "sindarin",
+    "grapheme": "y",
+    "sound": "like German 'ü' in 'über'",
+    "questions": [
+      {
+        "prompt": "How is the y in 'Emyn Muil' pronounced?",
+        "answer": "like the ü in German 'über'",
+        "distractors": ["like the y in 'yes'", "like the y in 'my'"]
+      }
+    ],
+    "explanation": "In Sindarin, Y is a vowel: say 'ee' with your lips rounded as for 'oo'. It is never the English 'y' of 'yes' or 'my'.",
+    "source": "Appendix E, section I (Vowels)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-cons-c",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "c",
+    "sound": "k as in 'kit'",
+    "questions": [
+      {
+        "prompt": "How is the c in 'Celeborn' pronounced?",
+        "answer": "like the k in 'kit'",
+        "distractors": ["like the s in 'sit'", "like the ch in 'church'"]
+      }
+    ],
+    "explanation": "C is always a hard 'k', even before e and i. Celeborn sounds like 'Keleborn'.",
+    "source": "Appendix E, section I (Consonants)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-cons-g",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "g",
+    "sound": "hard g as in 'give'",
+    "questions": [
+      {
+        "prompt": "How is the g in 'Gilraen' pronounced?",
+        "answer": "like the g in 'give'",
+        "distractors": ["like the g in 'gem'", "like the s in 'measure'"]
+      }
+    ],
+    "explanation": "G is always hard, as in 'give' or 'get', never the soft 'j' sound of 'gem'.",
+    "source": "Appendix E, section I (Consonants)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-cons-s",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "s",
+    "sound": "s as in 'so'",
+    "questions": [
+      {
+        "prompt": "How is the s in 'Isildur' pronounced?",
+        "answer": "like the s in 'so'",
+        "distractors": ["like the z in 'zoo'", "like the sh in 'shoe'"]
+      }
+    ],
+    "explanation": "S is always the hissing 's' of 'so', never the buzzing 'z' that English often uses between vowels.",
+    "source": "Appendix E, section I (Consonants)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-cons-th",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "th",
+    "sound": "th as in 'think'",
+    "questions": [
+      {
+        "prompt": "How is the th in 'Ithil' pronounced?",
+        "answer": "like the th in 'think'",
+        "distractors": ["like the th in 'this'", "like a t followed by an h"]
+      }
+    ],
+    "explanation": "TH is the breathy, voiceless sound at the start of 'think' and the end of 'bath'.",
+    "source": "Appendix E, section I (Consonants)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-cons-dh",
+    "kind": "sound",
+    "lang": "sindarin",
+    "grapheme": "dh",
+    "sound": "th as in 'this'",
+    "questions": [
+      {
+        "prompt": "How is the dh in 'Caradhras' pronounced?",
+        "answer": "like the th in 'this'",
+        "distractors": ["like the th in 'think'", "like a d followed by an h"]
+      }
+    ],
+    "explanation": "DH is the buzzing, voiced 'th' of 'this' and 'breathe'. Sindarin writes it differently from TH because they are different sounds.",
+    "source": "Appendix E, section I (Consonants)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-cons-ch",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "ch",
+    "sound": "ch as in German 'Bach'",
+    "questions": [
+      {
+        "prompt": "How is the ch in 'echant' pronounced?",
+        "answer": "like the ch in German 'Bach' or Scottish 'loch'",
+        "distractors": ["like the ch in 'church'", "like the sh in 'shoe'"]
+      }
+    ],
+    "explanation": "CH is a rasping sound made at the back of the mouth, as in German 'Bach'. It is never the 'ch' of 'church'.",
+    "source": "Appendix E, section I (Consonants)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-cons-r",
+    "kind": "sound",
+    "lang": "both",
+    "grapheme": "r",
+    "sound": "trilled r",
+    "questions": [
+      {
+        "prompt": "How is the r in 'Rauros' pronounced?",
+        "answer": "trilled, with the tip of the tongue",
+        "distractors": ["silent, as in British 'car'", "like the English r in 'red'"]
+      }
+    ],
+    "explanation": "R is trilled (rolled) wherever it appears, including at the end of a word.",
+    "source": "Appendix E, section I (Consonants)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-cons-lh-rh",
+    "kind": "sound",
+    "lang": "sindarin",
+    "grapheme": "lh, rh",
+    "sound": "breathy (voiceless) l and r",
+    "questions": [
+      {
+        "prompt": "How is the lh in 'Lhûn' pronounced?",
+        "answer": "as a breathy l, with air but no voice",
+        "distractors": ["as an l followed by an h", "as a silent letter"]
+      }
+    ],
+    "explanation": "At the start of a word, LH and RH stand for 'whispered' versions of l and r: air flows but the voice is off.",
+    "source": "Appendix E, section I (Consonants)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-cons-final-f",
+    "kind": "sound",
+    "lang": "sindarin",
+    "grapheme": "f (final)",
+    "sound": "v at the end of a word",
+    "questions": [
+      {
+        "prompt": "How is the final f in 'Nindalf' pronounced?",
+        "answer": "like v",
+        "distractors": ["like f", "it is silent"]
+      }
+    ],
+    "explanation": "In Sindarin, F at the end of a word stands for a v sound, as at the end of English 'have'. Elsewhere it is an ordinary f.",
+    "source": "Appendix E, section I (Consonants)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-cons-double",
+    "kind": "rule",
+    "lang": "both",
+    "questions": [
+      {
+        "prompt": "How is the ll in 'mellon' pronounced?",
+        "answer": "as a long l, held for longer",
+        "distractors": ["as a single short l", "as the 'y' sound of Spanish 'll'"]
+      },
+      {
+        "prompt": "In 'Annúminas', what does the double n mean?",
+        "answer": "the n is held longer",
+        "distractors": ["the n is silent", "the n is nasal, as in French"]
+      }
+    ],
+    "explanation": "A consonant written twice is pronounced long: you hold it a moment, as in English 'unnamed' or Italian 'nonno'.",
+    "source": "Appendix E, section I (Consonants)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-stress-two",
+    "kind": "rule",
+    "lang": "both",
+    "questions": [
+      {
+        "prompt": "In a word of two syllables, which syllable is usually stressed?",
+        "answer": "the first",
+        "distractors": ["the last", "both equally"]
+      }
+    ],
+    "explanation": "Two-syllable words are stressed on the first syllable in nearly every case: ITH-il, AR-wen.",
+    "source": "Appendix E, section I (Stress)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-stress-long",
+    "kind": "rule",
+    "lang": "both",
+    "questions": [
+      {
+        "prompt": "In a longer word, when is the next-to-last syllable stressed?",
+        "answer": "when it is 'heavy': a long vowel, a diphthong, or a vowel before two consonants",
+        "distractors": ["always", "only when it has an accent mark"]
+      },
+      {
+        "prompt": "If the next-to-last syllable is 'light' (a short vowel and at most one consonant), where does the stress go?",
+        "answer": "on the syllable before it, third from the end",
+        "distractors": ["on the last syllable", "on the first syllable"]
+      }
+    ],
+    "explanation": "In words of three or more syllables, look at the next-to-last syllable. If it is heavy, it takes the stress; if it is light, the stress moves one syllable further back.",
+    "source": "Appendix E, section I (Stress)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-stress-ithil",
+    "kind": "stress",
+    "lang": "sindarin",
+    "word": "Ithil",
+    "syllables": ["I", "thil"],
+    "stressed": 0,
+    "explanation": "Two syllables, so the first is stressed: I-thil.",
+    "source": "Appendix E, section I (Stress)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-stress-anduril",
+    "kind": "stress",
+    "lang": "quenya",
+    "word": "Andúril",
+    "syllables": ["An", "dú", "ril"],
+    "stressed": 1,
+    "explanation": "The next-to-last syllable has a long vowel (ú), so it takes the stress: an-DÚ-ril.",
+    "source": "Appendix E, section I (Stress)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-stress-isildur",
+    "kind": "stress",
+    "lang": "quenya",
+    "word": "Isildur",
+    "syllables": ["I", "sil", "dur"],
+    "stressed": 1,
+    "explanation": "The next-to-last syllable has a short i followed by two consonants (l, d), so it is heavy and stressed: i-SIL-dur.",
+    "source": "Appendix E, section I (Stress)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-stress-elendil",
+    "kind": "stress",
+    "lang": "quenya",
+    "word": "Elendil",
+    "syllables": ["E", "len", "dil"],
+    "stressed": 1,
+    "explanation": "The e of the next-to-last syllable is followed by two consonants (n, d), so it is stressed: e-LEN-dil.",
+    "source": "Appendix E, section I (Stress)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-stress-iluvatar",
+    "kind": "stress",
+    "lang": "quenya",
+    "word": "Ilúvatar",
+    "syllables": ["I", "lú", "va", "tar"],
+    "stressed": 1,
+    "explanation": "The next-to-last syllable (va) is light, so the stress moves back one: i-LÚ-va-tar.",
+    "source": "Appendix E, section I (Stress)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-stress-celeborn",
+    "kind": "stress",
+    "lang": "sindarin",
+    "word": "Celeborn",
+    "syllables": ["Ce", "le", "born"],
+    "stressed": 0,
+    "explanation": "The next-to-last syllable (le) has a short e and only one consonant after it, so the stress moves back: CE-le-born (and remember, 'Ke-').",
+    "source": "Appendix E, section I (Stress)",
+    "confidence": "high"
+  },
+  {
+    "id": "pr-stress-elessar",
+    "kind": "stress",
+    "lang": "quenya",
+    "word": "Elessar",
+    "syllables": ["E", "les", "sar"],
+    "stressed": 1,
+    "explanation": "The double s makes the next-to-last syllable heavy, so it is stressed: e-LES-sar.",
+    "source": "Appendix E, section I (Stress)",
+    "confidence": "high"
+  }
+]

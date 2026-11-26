@@ -1,0 +1,33 @@
+{
+  "id": "sin-light-and-places",
+  "trackId": "sindarin",
+  "title": "Lights and Lands",
+  "description": "Sun, moon, stars and the lands they shine on, hidden inside famous names.",
+  "lessons": [
+    {
+      "id": "sin-light-1",
+      "title": "Sun and Moon",
+      "items": ["sin-ithil", "sin-anor", "sin-minas", "sin-minas-ithil", "sin-minas-anor"]
+    },
+    {
+      "id": "sin-light-2",
+      "title": "Tower of Guard",
+      "items": ["sin-tirith", "sin-minas-tirith", "sin-gil", "sin-osgiliath"]
+    },
+    {
+      "id": "sin-light-3",
+      "title": "Silver and stars",
+      "items": ["sin-remmirath", "sin-menelvagor", "sin-celeb", "sin-celebrant", "sin-mithril"]
+    },
+    {
+      "id": "sin-light-4",
+      "title": "The Black Land",
+      "items": ["sin-mor", "sin-dor", "sin-mordor", "sin-annon", "sin-morannon", "sin-ion"]
+    },
+    {
+      "id": "sin-light-5",
+      "title": "West and Rivendell",
+      "items": ["sin-annun", "sin-henneth-annun", "sin-imladris", "sin-galadhrim"]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "pron-vowels",
+  "trackId": "pronunciation",
+  "title": "Vowels",
+  "description": "Pure vowels, accent marks and diphthongs.",
+  "lessons": [
+    {
+      "id": "pron-vowels-1",
+      "title": "The five vowels",
+      "items": ["pr-vowel-a", "pr-vowel-e", "pr-vowel-i", "pr-vowel-o", "pr-vowel-u"]
+    },
+    {
+      "id": "pron-vowels-2",
+      "title": "Accent marks",
+      "items": ["pr-acute", "pr-circumflex", "pr-final-e", "pr-diaeresis"]
+    },
+    {
+      "id": "pron-vowels-3",
+      "title": "Diphthongs",
+      "items": ["pr-diph-ai", "pr-diph-au", "pr-diph-ui", "pr-diph-ae"]
+    },
+    {
+      "id": "pron-vowels-4",
+      "title": "The Sindarin y",
+      "items": ["pr-vowel-y", "pr-vowel-u", "pr-vowel-i", "pr-diph-ui"]
+    }
+  ]
+}

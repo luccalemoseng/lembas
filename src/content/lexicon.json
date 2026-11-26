@@ -1,0 +1,473 @@
+[
+  {
+    "id": "sin-mellon",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "mellon",
+    "gloss": ["friend"],
+    "note": "The password that opens the West-gate of Moria.",
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-pedo",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "pedo",
+    "gloss": ["speak", "say"],
+    "note": "A command: 'speak!'",
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark); the reading 'say' comes from the same chapter, where the riddle of the inscription is solved",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-a",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "a",
+    "gloss": ["and"],
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-minno",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "minno",
+    "gloss": ["enter"],
+    "note": "A command: 'enter!'",
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-pedo-mellon-a-minno",
+    "kind": "phrase",
+    "lang": "sindarin",
+    "word": "pedo mellon a minno",
+    "gloss": ["speak, friend, and enter", "say friend and enter"],
+    "elements": [
+      { "form": "pedo", "meaning": "speak" },
+      { "form": "mellon", "meaning": "friend" },
+      { "form": "a", "meaning": "and" },
+      { "form": "minno", "meaning": "enter" }
+    ],
+    "note": "Written above the Doors of Durin. The riddle: you open the doors by saying the word 'friend' itself.",
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-mae-govannen",
+    "kind": "phrase",
+    "lang": "sindarin",
+    "word": "mae govannen",
+    "gloss": ["well met"],
+    "note": "A greeting used by an Elf-lord meeting Strider on the road.",
+    "source": "The Fellowship of the Ring, Book I, ch. 12 (Flight to the Ford). The phrase is in the text; the gloss 'well met' is not given there.",
+    "confidence": "review"
+  },
+  {
+    "id": "sin-ennyn",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "ennyn",
+    "gloss": ["doors", "gates"],
+    "note": "Plural of annon, 'gate'.",
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-aran",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "aran",
+    "gloss": ["lord", "king"],
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark), translated there as 'lord'; 'king' from The Silmarillion, Appendix (Elements in Quenya and Sindarin Names)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-ennyn-durin-aran-moria",
+    "kind": "phrase",
+    "lang": "sindarin",
+    "word": "Ennyn Durin Aran Moria",
+    "gloss": ["the Doors of Durin, Lord of Moria"],
+    "elements": [
+      { "form": "ennyn", "meaning": "doors" },
+      { "form": "aran", "meaning": "lord" }
+    ],
+    "note": "Notice there is no word for 'of': the owner simply follows the thing owned.",
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-im",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "im",
+    "gloss": ["I"],
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-hain",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "hain",
+    "gloss": ["them"],
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-echant",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "echant",
+    "gloss": ["made"],
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-im-narvi-hain-echant",
+    "kind": "phrase",
+    "lang": "sindarin",
+    "word": "Im Narvi hain echant",
+    "gloss": ["I, Narvi, made them"],
+    "elements": [
+      { "form": "im", "meaning": "I" },
+      { "form": "hain", "meaning": "them" },
+      { "form": "echant", "meaning": "made" }
+    ],
+    "note": "Narvi was the Dwarf who built the doors. The word order is 'I Narvi them made'.",
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-o",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "o",
+    "gloss": ["of"],
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-eregion",
+    "kind": "name",
+    "lang": "sindarin",
+    "word": "Eregion",
+    "gloss": ["Hollin"],
+    "note": "A land west of the Misty Mountains where Elven-smiths once lived. 'Hollin' is the name it is given in English in the story.",
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-teithant",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "teithant",
+    "gloss": ["drew"],
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-i",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "i",
+    "gloss": ["the"],
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-thiw",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "thiw",
+    "gloss": ["signs"],
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-hin",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "hin",
+    "gloss": ["these"],
+    "note": "It comes after the noun: i thiw hin, 'the signs these'.",
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-celebrimbor-teithant",
+    "kind": "phrase",
+    "lang": "sindarin",
+    "word": "Celebrimbor o Eregion teithant i thiw hin",
+    "gloss": ["Celebrimbor of Hollin drew these signs"],
+    "elements": [
+      { "form": "o", "meaning": "of" },
+      { "form": "Eregion", "meaning": "Hollin" },
+      { "form": "teithant", "meaning": "drew" },
+      { "form": "i thiw hin", "meaning": "these signs" }
+    ],
+    "note": "Celebrimbor was the Elven-smith who drew the letters on the doors.",
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-ithil",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "ithil",
+    "gloss": ["moon"],
+    "source": "Minas Ithil, The Fellowship of the Ring, Book II, ch. 2 (The Council of Elrond); element listed in The Silmarillion, Appendix",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-anor",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "anor",
+    "gloss": ["sun"],
+    "source": "Minas Anor, The Fellowship of the Ring, Book II, ch. 2 (The Council of Elrond); element listed in The Silmarillion, Appendix",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-minas",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "minas",
+    "gloss": ["tower"],
+    "source": "The Fellowship of the Ring, Book II, ch. 2 (The Council of Elrond); element listed in The Silmarillion, Appendix",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-minas-ithil",
+    "kind": "name",
+    "lang": "sindarin",
+    "word": "Minas Ithil",
+    "gloss": ["Tower of the Rising Moon", "Tower of the Moon"],
+    "elements": [
+      { "form": "minas", "meaning": "tower" },
+      { "form": "ithil", "meaning": "moon" }
+    ],
+    "note": "A fortress of Gondor that later fell to the Enemy and was renamed.",
+    "source": "The Fellowship of the Ring, Book II, ch. 2 (The Council of Elrond)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-minas-anor",
+    "kind": "name",
+    "lang": "sindarin",
+    "word": "Minas Anor",
+    "gloss": ["Tower of the Setting Sun", "Tower of the Sun"],
+    "elements": [
+      { "form": "minas", "meaning": "tower" },
+      { "form": "anor", "meaning": "sun" }
+    ],
+    "note": "The older name of the city later called Minas Tirith.",
+    "source": "The Fellowship of the Ring, Book II, ch. 2 (The Council of Elrond)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-tirith",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "tirith",
+    "gloss": ["guard", "watch"],
+    "source": "Minas Tirith, The Fellowship of the Ring, Book II, ch. 2 (The Council of Elrond); element listed in The Silmarillion, Appendix",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-minas-tirith",
+    "kind": "name",
+    "lang": "sindarin",
+    "word": "Minas Tirith",
+    "gloss": ["Tower of Guard"],
+    "elements": [
+      { "form": "minas", "meaning": "tower" },
+      { "form": "tirith", "meaning": "guard" }
+    ],
+    "note": "The chief city of Gondor.",
+    "source": "The Fellowship of the Ring, Book II, ch. 2 (The Council of Elrond)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-gil",
+    "kind": "element",
+    "lang": "sindarin",
+    "word": "gil",
+    "gloss": ["star"],
+    "note": "Found in names such as Osgiliath and Gil-galad.",
+    "source": "The Silmarillion, Appendix (Elements in Quenya and Sindarin Names)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-osgiliath",
+    "kind": "name",
+    "lang": "sindarin",
+    "word": "Osgiliath",
+    "gloss": ["Citadel of the Stars"],
+    "elements": [{ "form": "gil", "meaning": "star" }],
+    "note": "The ancient capital of Gondor, built across the Great River.",
+    "source": "The Fellowship of the Ring, Book II, ch. 2 (The Council of Elrond)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-remmirath",
+    "kind": "name",
+    "lang": "sindarin",
+    "word": "Remmirath",
+    "gloss": ["the Netted Stars"],
+    "note": "A cluster of stars the hobbits see rising on their first night out; usually taken to be the Pleiades.",
+    "source": "The Fellowship of the Ring, Book I, ch. 3 (Three is Company)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-menelvagor",
+    "kind": "name",
+    "lang": "sindarin",
+    "word": "Menelvagor",
+    "gloss": ["the Swordsman of the Sky"],
+    "note": "A constellation with a bright belt, seen on the same night; usually taken to be Orion.",
+    "source": "The Fellowship of the Ring, Book I, ch. 3 (Three is Company)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-celeb",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "celeb",
+    "gloss": ["silver"],
+    "note": "Remember that c always has a k sound, so this word begins like English 'kettle'.",
+    "source": "Appendix E, section I (used there as an example of the letter C)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-celebrant",
+    "kind": "name",
+    "lang": "sindarin",
+    "word": "Celebrant",
+    "gloss": ["Silverlode"],
+    "elements": [{ "form": "celeb", "meaning": "silver" }],
+    "note": "A river flowing through the golden wood of Lórien.",
+    "source": "The Fellowship of the Ring, Book II (chapters in and near Lothlórien)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-mithril",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "mithril",
+    "gloss": ["true-silver", "Moria-silver"],
+    "note": "The precious metal of Moria, light and stronger than steel.",
+    "source": "The Fellowship of the Ring, Book II, ch. 4 (A Journey in the Dark)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-mor",
+    "kind": "element",
+    "lang": "sindarin",
+    "word": "mor",
+    "gloss": ["black", "dark"],
+    "source": "The Silmarillion, Appendix (Elements in Quenya and Sindarin Names)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-dor",
+    "kind": "element",
+    "lang": "sindarin",
+    "word": "-dor",
+    "gloss": ["land"],
+    "note": "Found at the end of many place names: Mordor, Gondor, Eriador.",
+    "source": "The Silmarillion, Appendix (Elements in Quenya and Sindarin Names)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-mordor",
+    "kind": "name",
+    "lang": "sindarin",
+    "word": "Mordor",
+    "gloss": ["Black Land"],
+    "elements": [
+      { "form": "mor", "meaning": "black" },
+      { "form": "-dor", "meaning": "land" }
+    ],
+    "source": "The Lord of the Rings (throughout); elements from The Silmarillion, Appendix",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-annon",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "annon",
+    "gloss": ["gate"],
+    "note": "Its plural is ennyn, the word on the Doors of Durin.",
+    "source": "The Silmarillion, Appendix (Elements in Quenya and Sindarin Names)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-morannon",
+    "kind": "name",
+    "lang": "sindarin",
+    "word": "Morannon",
+    "gloss": ["Black Gate"],
+    "elements": [
+      { "form": "mor", "meaning": "black" },
+      { "form": "annon", "meaning": "gate" }
+    ],
+    "source": "The Two Towers, Book IV, ch. 3 (The Black Gate is Closed)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-ion",
+    "kind": "element",
+    "lang": "sindarin",
+    "word": "-ion",
+    "gloss": ["son of"],
+    "note": "An ending that can turn a father's name into 'son of ...'.",
+    "source": "Needs checking: confirm an example of this ending inside the published work before enabling.",
+    "confidence": "review"
+  },
+  {
+    "id": "sin-annun",
+    "kind": "word",
+    "lang": "sindarin",
+    "word": "annûn",
+    "gloss": ["sunset", "west"],
+    "source": "Henneth Annûn, The Two Towers, Book IV, ch. 5 (The Window on the West); element listed in The Silmarillion, Appendix",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-henneth-annun",
+    "kind": "name",
+    "lang": "sindarin",
+    "word": "Henneth Annûn",
+    "gloss": ["Window of the Sunset"],
+    "elements": [
+      { "form": "henneth", "meaning": "window" },
+      { "form": "annûn", "meaning": "sunset" }
+    ],
+    "note": "A hidden refuge behind a waterfall in Ithilien.",
+    "source": "The Two Towers, Book IV, ch. 5 (The Window on the West)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-imladris",
+    "kind": "name",
+    "lang": "sindarin",
+    "word": "Imladris",
+    "gloss": ["Rivendell"],
+    "note": "The Elvish name of the house of Elrond, hidden in a deep valley.",
+    "source": "The Fellowship of the Ring, Book II, ch. 2 (The Council of Elrond)",
+    "confidence": "high"
+  },
+  {
+    "id": "sin-galadhrim",
+    "kind": "name",
+    "lang": "sindarin",
+    "word": "Galadhrim",
+    "gloss": ["the Tree-people"],
+    "elements": [{ "form": "galadh", "meaning": "tree" }],
+    "note": "The Elves of Lórien, who live on platforms high in the trees.",
+    "source": "The Fellowship of the Ring, Book II, ch. 6 (Lothlórien). Check whether the gloss 'Tree-people' appears in the text.",
+    "confidence": "review"
+  }
+]

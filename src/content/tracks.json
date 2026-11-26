@@ -1,0 +1,30 @@
+[
+  {
+    "id": "pronunciation",
+    "title": "Pronunciation",
+    "description": "How to read Elvish names aloud: vowels, consonants and stress.",
+    "units": ["pron-vowels", "pron-consonants", "pron-stress"],
+    "status": "available"
+  },
+  {
+    "id": "sindarin",
+    "title": "Sindarin Basics",
+    "description": "The everyday Elvish of Middle-earth: inscriptions, places and the lights of the sky.",
+    "units": ["sin-doors-of-durin", "sin-light-and-places"],
+    "status": "available"
+  },
+  {
+    "id": "quenya",
+    "title": "Quenya Basics",
+    "description": "The ancient, formal tongue of the Elves.",
+    "units": [],
+    "status": "coming-soon"
+  },
+  {
+    "id": "tengwar",
+    "title": "Tengwar Script",
+    "description": "Read and write the Elvish letters.",
+    "units": [],
+    "status": "coming-soon"
+  }
+]

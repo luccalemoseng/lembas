@@ -1,0 +1,36 @@
+{
+  "id": "sin-doors-of-durin",
+  "trackId": "sindarin",
+  "title": "The Doors of Durin",
+  "description": "Read the inscription on the West-gate of Moria, word by word.",
+  "lessons": [
+    {
+      "id": "sin-durin-1",
+      "title": "Speak, friend",
+      "items": [
+        "sin-mellon",
+        "sin-pedo",
+        "sin-a",
+        "sin-minno",
+        "sin-pedo-mellon-a-minno",
+        "sin-mae-govannen"
+      ]
+    },
+    {
+      "id": "sin-durin-2",
+      "title": "Doors and lords",
+      "items": ["sin-ennyn", "sin-aran", "sin-ennyn-durin-aran-moria"]
+    },
+    {
+      "id": "sin-durin-3",
+      "title": "I, Narvi",
+      "items": ["sin-im", "sin-hain", "sin-echant", "sin-im-narvi-hain-echant"]
+    },
+    { "id": "sin-durin-4", "title": "Hollin", "items": ["sin-o", "sin-eregion", "sin-teithant"] },
+    {
+      "id": "sin-durin-5",
+      "title": "These signs",
+      "items": ["sin-i", "sin-thiw", "sin-hin", "sin-celebrimbor-teithant"]
+    }
+  ]
+}

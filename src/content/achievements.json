@@ -1,0 +1,86 @@
+[
+  {
+    "id": "setting-out",
+    "title": "Setting Out",
+    "description": "Complete your first lesson.",
+    "kind": "lessons",
+    "target": 1
+  },
+  {
+    "id": "elf-friend",
+    "title": "Elf-friend",
+    "description": "Finish the unit The Doors of Durin and say the word that opens them.",
+    "kind": "unit",
+    "target": "sin-doors-of-durin"
+  },
+  {
+    "id": "stargazer",
+    "title": "Stargazer",
+    "description": "Finish the unit Lights and Lands.",
+    "kind": "unit",
+    "target": "sin-light-and-places"
+  },
+  {
+    "id": "clear-voice",
+    "title": "Clear Voice",
+    "description": "Complete the whole Pronunciation track.",
+    "kind": "track",
+    "target": "pronunciation"
+  },
+  {
+    "id": "true-silver",
+    "title": "True-silver",
+    "description": "Complete 5 lessons without a single mistake.",
+    "kind": "perfectLessons",
+    "target": 5
+  },
+  {
+    "id": "kindled-lamp",
+    "title": "Kindled Lamp",
+    "description": "Keep a 3-day streak.",
+    "kind": "streak",
+    "target": 3
+  },
+  {
+    "id": "tower-of-guard",
+    "title": "Tower of Guard",
+    "description": "Keep a 7-day streak.",
+    "kind": "streak",
+    "target": 7
+  },
+  {
+    "id": "unfading-star",
+    "title": "Unfading Star",
+    "description": "Keep a 30-day streak.",
+    "kind": "streak",
+    "target": 30
+  },
+  {
+    "id": "waybread",
+    "title": "Waybread",
+    "description": "Earn 100 XP.",
+    "kind": "xp",
+    "target": 100
+  },
+  {
+    "id": "loremaster",
+    "title": "Loremaster",
+    "description": "Earn 500 XP.",
+    "kind": "xp",
+    "target": 500
+  },
+  {
+    "id": "second-look",
+    "title": "Second Look",
+    "description": "Finish your first practice session.",
+    "kind": "practiceSessions",
+    "target": 1
+  },
+  {
+    "id": "patient-scholar",
+    "title": "Patient Scholar",
+    "description": "Finish 10 practice sessions.",
+    "kind": "practiceSessions",
+    "target": 10
+  }
+]

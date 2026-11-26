@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#1f4d3a"/>
+  <!-- A leaf wrapping a small loaf: original mark for the app -->
+  <path d="M256 92c-92 64-132 150-112 236 10 44 46 80 112 92 66-12 102-48 112-92 20-86-20-172-112-236z" fill="#e8c766"/>
+  <path d="M256 128v276" stroke="#1f4d3a" stroke-width="14" stroke-linecap="round"/>
+  <path d="M256 200l-56-40M256 252l-72-44M256 304l-76-40M256 200l56-40M256 252l72-44M256 304l76-40" stroke="#1f4d3a" stroke-width="10" stroke-linecap="round"/>
+</svg>

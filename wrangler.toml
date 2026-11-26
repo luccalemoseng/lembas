@@ -1,0 +1,6 @@
+# Cloudflare Pages configuration.
+# The app is fully static: the handwriting check (Phase 4) runs in the browser,
+# so no Functions, KV namespaces or secrets are needed.
+name = "lembas"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-11-20"
